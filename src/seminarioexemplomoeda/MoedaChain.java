@@ -56,4 +56,16 @@ public abstract class MoedaChain {
     }
 
     protected abstract void resumoMoeda();
+
+    public float totalArrecadacao() {
+        float total = 0;
+        total = totalMoeda();
+        if (proximo != null) {
+            total += proximo.totalArrecadacao();
+        }
+        return total;
+    }
+
+    protected abstract float totalMoeda();
+
 }

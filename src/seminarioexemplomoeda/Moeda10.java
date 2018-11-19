@@ -20,4 +20,8 @@ public class Moeda10 extends MoedaChain {
         System.out.println("Quantidade de moeda: " + qtdMoeda + " | Valor Moeda:" + (qtdMoeda * 10));//50 Valor
     }
 
+    @Override
+    protected float totalMoeda() {
+        return qtdMoeda * 10;
+    }
 }
