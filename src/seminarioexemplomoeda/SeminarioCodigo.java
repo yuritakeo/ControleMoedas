@@ -22,10 +22,10 @@ public class SeminarioCodigo {
                         cofre.inserirMoeda(IdMoeda.Moeda5);
                         break;
                     case (2):
-                        cofre.inserirMoeda(IdMoeda.Moeda25);
+                        cofre.inserirMoeda(IdMoeda.Moeda10);
                         break;
                     case (3):
-                        cofre.inserirMoeda(IdMoeda.Moeda10);
+                        cofre.inserirMoeda(IdMoeda.Moeda25);
                         break;
                     case (4):
                         cofre.inserirMoeda(IdMoeda.Moeda50);
