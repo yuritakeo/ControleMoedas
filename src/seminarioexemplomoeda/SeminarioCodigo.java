@@ -41,7 +41,7 @@ public class SeminarioCodigo {
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            
+
         }
         try {
             cofre.resumoMoeda(IdMoeda.Moeda25);
