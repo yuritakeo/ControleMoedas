@@ -28,7 +28,7 @@ public abstract class MoedaChain {
             inserirMoeda();
         } else {
             if (proximo == null) {
-                throw new Exception("moeda não cadastrada");
+                throw new Exception("Moeda não cadastrada");
             }
             proximo.inserirMoeda(id);
         }
@@ -42,7 +42,7 @@ public abstract class MoedaChain {
             resumoMoeda();
         } else {
             if (proximo == null) {
-                throw new Exception("sem mais tipo de moedas");
+                throw new Exception("Tipo de moeda não encontrada");
             }
             proximo.resumoMoeda(id);
         }
@@ -65,7 +65,7 @@ public abstract class MoedaChain {
         }
         return total;
     }
-
+    
     protected abstract float totalMoeda();
 
 }

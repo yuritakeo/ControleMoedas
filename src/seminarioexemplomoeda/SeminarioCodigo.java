@@ -40,15 +40,15 @@ public class SeminarioCodigo {
                 }
             }
         } catch (Exception e) {
-        }
-
-        try {
-            //cofre.resumoMoeda(IdMoeda.Moeda50);
-            //cofre.fullResumo();
+            System.out.println(e.getMessage());
             
-            System.out.println(cofre.totalArrecadacao());
+        }
+        try {
+            cofre.resumoMoeda(IdMoeda.Moeda25);
+            //cofre.fullResumo();
+            //System.out.println(cofre.totalArrecadacao());
         } catch (Exception e) {
-
+            System.out.println(e.getMessage());
         }
     }
 }
